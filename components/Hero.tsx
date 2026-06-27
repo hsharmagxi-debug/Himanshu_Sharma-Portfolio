@@ -64,10 +64,10 @@ export default function Hero() {
             animate="show"
             className="text-6xl md:text-8xl font-bold text-white leading-none tracking-tight"
           >
-            {profile.identity.name.split(" ")[0]}
+            {profile.identity.name.split(" ")[0].toUpperCase()}
             <br />
             <span className="text-zinc-500">
-              {profile.identity.name.split(" ").slice(1).join(" ")}
+              {profile.identity.name.split(" ").slice(1).join(" ").toUpperCase()}
             </span>
           </motion.h1>
 
