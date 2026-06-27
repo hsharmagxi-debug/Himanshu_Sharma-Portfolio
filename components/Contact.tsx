@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { Mail, MapPin, Clock } from "lucide-react";
-import SkillSnapshot from "@/components/SkillSnapshot";
 
 export default function Contact() {
   return (
@@ -71,22 +70,21 @@ export default function Contact() {
           ))}
         </motion.div>
 
-        {/* Primary CTA */}
+        {/* Email link */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+          className="flex justify-center mb-12"
         >
           <a
             href="mailto:vikashjaiswal.486@gmail.com"
-            className="inline-flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-150 text-sm"
+            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium text-sm transition-colors duration-150"
           >
-            <Mail size={16} />
+            <Mail size={14} />
             vikashjaiswal.486@gmail.com
           </a>
-          <SkillSnapshot />
         </motion.div>
 
         {/* Social row */}
