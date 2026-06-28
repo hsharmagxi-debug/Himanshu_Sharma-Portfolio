@@ -1,206 +1,69 @@
-"use client";
+'use client';
 
-import { Variants } from "framer-motion";
-import { profile } from "@/lib/profile";
-import { motion } from "framer-motion";
-import ResumeDownload from "./ResumeDownload";
-import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
-import { ArrowDownRight } from "lucide-react";
-
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 28 },
-  show: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.55,
-      delay: i * 0.11,
-      ease: [0.25, 0.1, 0.25, 1],
-    },
-  }),
-};
+import { motion } from 'framer-motion';
 
 export default function Hero() {
+  const titles = [
+    "Technical Specialist – Broadcasting & Streaming",
+    "Founder & CEO, The KPI Hub",
+    "Builder of Autonomous AI Systems",
+    "Platform Engineer | NHL Broadcast Support"
+  ];
+
   return (
-    <section
-      id="about"
-      className="relative min-h-screen bg-black flex items-center overflow-hidden"
-    >
-      {/* Background Grid */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage:
-            "radial-gradient(rgba(6,182,212,0.08) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
+    <section className="min-h-[90vh] flex flex-col justify-center px-6 pt-20">
+      <div className="max-w-5xl mx-auto">
+        <div className="mb-6">
+          <span className="px-4 py-1.5 text-sm rounded-full border border-white/20 text-white/70">
+            Delhi-NCR, India
+          </span>
+        </div>
 
-      {/* Glow Effects */}
-      <div className="absolute top-20 left-1/3 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-blue-700/5 rounded-full blur-3xl pointer-events-none" />
+        <h1 className="text-6xl md:text-7xl font-semibold tracking-tighter mb-6">
+          Himanshu Sharma
+        </h1>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-28 pb-24">
-        <div className="max-w-4xl">
-
-          {/* Badge */}
+        <div className="h-20 mb-8 overflow-hidden">
           <motion.div
-            custom={0}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 px-4 py-2 rounded-full mb-8"
+            animate={{ y: [0, -80, -160, -240, 0] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            className="text-3xl md:text-4xl text-[#06b6d4] font-medium"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            15+ Years · Cloud · DevOps · Platform Engineering · GenAI
-          </motion.div>
-
-          {/* Name (from profile.ts) */}
-          <motion.h1
-            custom={1}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="text-6xl md:text-8xl font-bold text-white leading-none tracking-tight"
-          >
-            {profile.identity.name.split(" ")[0].toUpperCase()}
-            <br />
-            <span className="text-zinc-500">
-              {profile.identity.name.split(" ").slice(1).join(" ").toUpperCase()}
-            </span>
-          </motion.h1>
-
-          {/* Animated Roles (from profile.ts) */}
-          <motion.div
-            custom={2}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="mt-6 text-xl md:text-3xl font-semibold text-cyan-400 h-10"
-          >
-            <TypeAnimation
-              sequence={profile.roles.flatMap((role) => [role, 2000])}
-              speed={55}
-              repeat={Infinity}
-            />
-          </motion.div>
-
-          {/* Bio (from profile.ts) */}
-          <motion.p
-            custom={3}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="mt-8 max-w-2xl text-base md:text-lg text-zinc-400 leading-relaxed"
-          >
-            {profile.summary}{" "}
-            Currently{" "}
-            <span className="text-white font-medium">
-              Lead DevOps Engineer at Devo Technology
-            </span>
-            , building AI FORGE on AWS Bedrock and driving observability +
-            automation at scale.
-          </motion.p>
-
-          {/* Location + Availability (from profile.ts) */}
-          <motion.div
-            custom={4}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="flex flex-wrap items-center gap-3 mt-6 text-sm text-zinc-500"
-          >
-            <span>{profile.identity.location}</span>
-            <span className="text-zinc-700">·</span>
-            <span className="text-emerald-400 font-medium">
-              {profile.identity.availability}
-            </span>
-            <span className="text-zinc-700">·</span>
-            <span>Remote / PAN India</span>
-          </motion.div>
-
-          {/* CTA SECTION */}
-          <motion.div
-            custom={5}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="flex flex-wrap gap-4 mt-10 items-center"
-          >
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-6 py-3.5 rounded-xl transition-colors duration-150"
-            >
-              View Projects
-              <ArrowDownRight className="w-4 h-4" />
-            </a>
-
-            {/* Primary Action */}
-            <ResumeDownload />
-          </motion.div>
-
-          {/* Social Links */}
-          <motion.div
-            custom={6}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="flex items-center gap-6 mt-10"
-          >
-            {[
-              {
-                href: "https://github.com/vikas0486",
-                Icon: FaGithub,
-                label: "GitHub",
-              },
-              {
-                href: "https://www.linkedin.com/in/linked2vikashjaiswal/",
-                Icon: FaLinkedin,
-                label: "LinkedIn",
-              },
-              {
-                href: "https://medium.com/@vikash.jaiswal",
-                Icon: FaMedium,
-                label: "Medium",
-              },
-            ].map(({ href, Icon, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="text-zinc-600 hover:text-white transition-colors duration-150"
-              >
-                <Icon size={22} />
-              </a>
+            {titles.map((title, index) => (
+              <div key={index} className="h-20 flex items-center">
+                {title}
+              </div>
             ))}
-
-            <span className="text-zinc-700 text-xs ml-1">
-              {profile.identity.location}
-            </span>
           </motion.div>
         </div>
-      </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{
-            repeat: Infinity,
-            duration: 1.6,
-            ease: "easeInOut",
-          }}
-          className="w-px h-10 bg-gradient-to-b from-zinc-600 to-transparent"
-        />
-      </motion.div>
+        <p className="max-w-2xl text-xl text-white/70 mb-10">
+          Technical Specialist supporting live NHL broadcasts with 99.97% uptime. 
+          Founder building production-grade SaaS and self-hosted AI systems. 
+          Focused on reliability, autonomy, and building things that matter.
+        </p>
+
+        <div className="flex flex-wrap gap-4">
+          <a 
+            href="#projects" 
+            className="px-8 py-3.5 bg-white text-black rounded-xl font-medium hover:bg-white/90 transition"
+          >
+            View Projects
+          </a>
+          <a 
+            href="#experience" 
+            className="px-8 py-3.5 border border-white/30 hover:bg-white/5 rounded-xl font-medium transition"
+          >
+            Experience
+          </a>
+        </div>
+
+        <div className="flex gap-6 mt-12 text-sm text-white/60">
+          <a href="https://github.com/hsharmagxi-debug" target="_blank" className="hover:text-white transition">GitHub</a>
+          <a href="https://thekpihub.com" target="_blank" className="hover:text-white transition">The KPI Hub</a>
+          <a href="https://hsharmagxi-debug.github.io" target="_blank" className="hover:text-white transition">Portfolio</a>
+        </div>
+      </div>
     </section>
   );
 }
