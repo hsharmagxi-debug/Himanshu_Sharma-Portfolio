@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import SkillSnapshot from '@/components/SkillSnapshot';
 
 export default function Hero() {
   const titles = [
@@ -60,6 +61,7 @@ export default function Hero() {
           >
             Experience
           </a>
+          <SkillSnapshot />
         </div>
 
         <div className="flex gap-6 mt-12 text-sm text-white/60">

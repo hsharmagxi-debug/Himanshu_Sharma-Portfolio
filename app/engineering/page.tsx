@@ -12,24 +12,24 @@ const EngineeringChat = dynamic(
 
 const sections = [
   {
-    title: "CI/CD Architecture",
-    slug: "cicd",
-    desc: "Jenkins vs GitHub Actions, pipelines, rollback strategies",
+    title: "Live Broadcasting Operations",
+    slug: "live-broadcasting",
+    desc: "AWS MediaLive, MediaConnect, SRT/Zixi ingest, 1,500+ NHL events at 99.9% uptime with zero SLA escalations",
   },
   {
-    title: "Terraform State Management",
-    slug: "terraform-state",
-    desc: "Remote state, locking, multi-env infra design",
+    title: "AI & Agentic Systems",
+    slug: "ai-agentic-systems",
+    desc: "AetherAI C-suite approval, NASSCOM 5-star RAG pipeline, LangGraph ReAct Agent, multi-agent architecture",
   },
   {
-    title: "DevSecOps Implementation",
-    slug: "devsecops",
-    desc: "SAST, DAST, secrets management, IAM security patterns",
+    title: "SaaS & Product Engineering",
+    slug: "saas-engineering",
+    desc: "The KPI Hub: B2B SaaS, 95%-automated 5-engine AI content pipeline, Next.js 15, Supabase RLS, Vercel",
   },
   {
-    title: "Observability Stack",
-    slug: "observability",
-    desc: "Prometheus, Grafana, OpenTelemetry pipelines",
+    title: "VSAT & Network Engineering",
+    slug: "vsat-networking",
+    desc: "Satellite delivery architecture, link budgets, EIRP calculations, nationwide government e-learning over VSAT",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function Engineering() {
           </h1>
 
           <p className="text-zinc-400 mb-12 max-w-2xl">
-            A structured breakdown of real-world DevOps, Cloud, and Platform Engineering scenarios.
+            Real-world technical breakdowns from live broadcast operations, AI systems, SaaS, and satellite engineering.
           </p>
         </motion.div>
 

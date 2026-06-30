@@ -50,7 +50,7 @@ This engineering case study does not exist yet.`;
           </h1>
 
           <p className="text-zinc-500 mt-2">
-            Deep dive into system design, architecture, and DevOps decisions.
+            Deep dive into real-world technical decisions and operational lessons.
           </p>
         </div>
 

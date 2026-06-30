@@ -54,8 +54,8 @@ export default function GitHubShowcase() {
       </h2>
 
       <p className="text-zinc-500 mb-8 max-w-3xl">
-        Selected repositories showcasing platform engineering,
-        DevOps automation, AI initiatives, and real-world engineering work.
+        Selected repositories showcasing live broadcasting infrastructure,
+        AI systems, and product engineering work.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6">

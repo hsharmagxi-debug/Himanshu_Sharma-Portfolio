@@ -18,13 +18,6 @@ const projects = [
     status: "Open Source"
   },
   {
-    title: "PolyMind",
-    description: "Multi-LLM platform supporting GPT-4o, Claude, and Gemini with document RAG, code assistance, and image generation capabilities.",
-    tech: ["Next.js", "OpenRouter", "RAG"],
-    link: "https://github.com/hsharmagxi-debug/polymind",
-    status: "Active"
-  },
-  {
     title: "Lumina Numerology",
     description: "Free, offline, high-accuracy numerology PWA with Pythagorean & Chaldean systems and a 5-expert consensus engine. Fully local with zero data collection.",
     tech: ["HTML/CSS/JS", "Tailwind", "PWA"],

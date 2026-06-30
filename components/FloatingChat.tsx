@@ -48,14 +48,14 @@ export default function FloatingChat() {
           }}
         >
           <span className="text-base">⚙</span>
-          <span>ArchForge</span>
+          <span>Ask Himanshu</span>
           {hovered && (
             <motion.span
               initial={{ opacity: 0, x: -4 }}
               animate={{ opacity: 1, x: 0 }}
               className="text-xs text-cyan-200 font-normal"
             >
-              — Chat with me
+              — Engineering Chat
             </motion.span>
           )}
         </motion.a>
