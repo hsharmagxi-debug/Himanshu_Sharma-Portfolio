@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { getRepos, GitHubRepo } from "../lib/github";
 
 const FEATURED_REPOS = [
-  "Himanshu-Portfolio",
+  "Himanshu_Sharma-Portfolio",
   "lumina-numerology",
 ];
 
