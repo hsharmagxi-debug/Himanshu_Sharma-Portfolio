@@ -36,7 +36,7 @@ export default function Navbar() {
           <span className="text-cyan-400">H</span>
           <span className="text-white">S</span>
           <span className="ml-2 text-zinc-500 font-normal text-sm hidden sm:inline">
-            / Technical Specialist & Founder
+            / Broadcast & Cloud Operations
           </span>
         </a>
 
@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <span className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-3 py-1.5 rounded-full">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Open to Work
+            Available Immediately
           </span>
           <a
             href="#contact"

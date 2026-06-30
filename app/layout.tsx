@@ -14,24 +14,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Himanshu Sharma — Technical Specialist & AI Builder",
+  title: "Himanshu Sharma — Broadcast & Cloud Operations Specialist",
   description:
-    "Technical Specialist supporting live NHL broadcasts with 99.97% uptime. Founder of The KPI Hub. Builder of autonomous AI systems, self-hosted infrastructure, and production-grade SaaS.",
+    "Broadcast and cloud operations engineer with 11+ years of experience. Delivered 99.9% uptime across 1,500+ live NHL events. Avid-compatible workflows, AWS Media Services, enterprise networking, and founder of The KPI Hub.",
   keywords: [
-    "Live Broadcasting",
-    "NHL Broadcast Engineer",
+    "Broadcast Engineer",
+    "NHL Broadcast Support",
     "AWS MediaLive",
-    "AI Systems Builder",
+    "Avid Media Composer",
+    "Avid NEXIS ISIS",
+    "Live Streaming",
+    "Post-Production Support",
+    "ServiceNow",
+    "Cloud Media Operations",
     "SaaS Founder",
-    "Platform Engineering",
-    "Next.js",
-    "Self-hosted AI",
+    "AI Systems",
+    "VSAT Engineering",
+    "IP Video",
   ],
   authors: [{ name: "Himanshu Sharma" }],
   openGraph: {
-    title: "Himanshu Sharma — Technical Specialist & AI Builder",
+    title: "Himanshu Sharma — Broadcast & Cloud Operations Specialist",
     description:
-      "Technical Specialist supporting live NHL broadcasts with 99.97% uptime. Founder of The KPI Hub. Builder of autonomous AI systems and production-grade SaaS.",
+      "11+ years in live broadcast infrastructure. 99.9% uptime across 1,500+ NHL events. Avid workflows, AWS Media Services, and founder of The KPI Hub.",
     type: "website",
   },
 };

@@ -4,25 +4,85 @@ import { motion } from 'framer-motion';
 
 const skillCategories = [
   {
-    title: "Broadcasting & Streaming",
-    skills: ["AWS MediaLive", "MediaPackage", "SRT / RTMP", "Live Monitoring", "VTOC", "ServiceNow"]
+    title: "Avid & Post-Production",
+    skills: [
+      "Avid Media Composer",
+      "Avid NEXIS/ISIS",
+      "Avid MediaCentral",
+      "Pro Tools",
+      "Avid Interplay / MAM",
+      "Avid iNEWS / Airspeed",
+      "DNxHD / DNxHR",
+      "H.264 / H.265 / AVC-Intra",
+      "MXF / MOV / MPEG-TS",
+    ],
   },
   {
-    title: "Cloud & Infrastructure",
-    skills: ["AWS", "Docker", "Vercel", "Supabase", "GitHub Actions", "CI/CD Pipelines"]
+    title: "Broadcast & IP Video",
+    skills: [
+      "AWS MediaLive",
+      "MediaConnect",
+      "MediaPackage",
+      "Zixi / SRT / RTMP / HLS",
+      "VTOC / Clubstream",
+      "Sencore / Telstra / Adtec",
+      "Elemental Link/Live",
+      "Harmonic / Ateme / Ericsson",
+      "VSAT / Satellite / EIRP",
+    ],
   },
   {
-    title: "AI & Agentic Systems",
-    skills: ["Claude", "Ollama", "LangGraph-style Agents", "n8n Workflows", "RAG Systems", "Multi-Agent Architecture"]
+    title: "Networking & Storage",
+    skills: [
+      "VLAN 802.1Q / QoS",
+      "IGMP Snooping",
+      "Layer 2/3 Topology Design",
+      "Cisco IOS/IOS-XE",
+      "HPE/Aruba / Juniper",
+      "Fiber / OTDR",
+      "SAN / NAS",
+      "Multicast / Unicast",
+    ],
   },
   {
-    title: "Full-Stack & Product",
-    skills: ["Next.js 15", "TypeScript", "Tailwind CSS", "shadcn/ui", "React", "Product Strategy"]
+    title: "Case Management & Monitoring",
+    skills: [
+      "ServiceNow",
+      "Datadog / Grafana",
+      "AWS CloudWatch",
+      "Zixi Zen Master",
+      "LogicMonitor / JIRA",
+      "Tier 3/4 Incident Response",
+      "RCA / Bug Tracking",
+      "SLA Governance",
+    ],
   },
   {
-    title: "Platform Engineering",
-    skills: ["Reliability Engineering", "Observability", "Automation", "Documentation-first", "Incremental Hardening", "99.97%+ Uptime Focus"]
-  }
+    title: "AV Systems & Audio",
+    skills: [
+      "Q-SYS / QSC",
+      "Crestron NVX",
+      "Biamp Tesira",
+      "Dante AoIP",
+      "Shure IntelliMix",
+      "BSS Audio / ClearOne",
+      "AMX / Extron",
+      "SIP / H.323 / RTP",
+    ],
+  },
+  {
+    title: "Cloud, Linux & Scripting",
+    skills: [
+      "Linux (CentOS/RHEL)",
+      "AWS VPC / EC2",
+      "Docker / Containers",
+      "Python / Bash / PowerShell",
+      "CI/CD",
+      "LangChain / LangGraph",
+      "Next.js 15 / TypeScript",
+      "SQL",
+    ],
+  },
 ];
 
 export default function Skills() {
@@ -32,7 +92,7 @@ export default function Skills() {
         <div className="mb-12">
           <h2 className="text-4xl font-semibold tracking-tight">Skills & Expertise</h2>
           <p className="text-white/60 mt-3 max-w-md">
-            A focused set of capabilities built across live broadcasting, cloud infrastructure, and autonomous systems.
+            11+ years across live broadcast infrastructure, post-production workflows, enterprise networking, and cloud operations.
           </p>
         </div>
 

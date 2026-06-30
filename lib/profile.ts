@@ -1,55 +1,109 @@
 export const profile = {
   identity: {
     name: "Himanshu Sharma",
-    title: "Technical Specialist – Broadcasting & Streaming",
-    location: "Delhi-NCR, India",
-    availability: "Open to Work",
+    title: "Broadcast & Cloud Operations Specialist | AWS Media Services",
+    location: "New Delhi, India",
+    availability: "Available Immediately · Open to Relocation",
   },
 
   roles: [
-    "Technical Specialist – Broadcasting & Streaming",
+    "Broadcast & Cloud Operations Specialist",
+    "Lead Technical Specialist – NHL Broadcasts",
+    "Avid Technical Support Engineer",
     "Founder & CEO, The KPI Hub",
-    "Builder of Autonomous AI Systems",
-    "Platform Engineer | NHL Broadcast Support",
   ],
 
   summary:
-    "Results-driven Technical Specialist and Founder with deep expertise in live broadcast infrastructure, cloud-native platforms, and autonomous AI systems. Currently supporting high-stakes NHL broadcasts with 99.97% uptime while building production-grade SaaS and self-hosted AI platforms. Passionate about building systems that matter — reliable, scalable, and privacy-first.",
+    "Broadcast and cloud operations engineer with 11+ years of hands-on experience in live streaming operations, IP video workflows, post-production pipeline support, and Tier 3/4 technical troubleshooting across globally distributed 24×7×365 teams. Delivered 99.9% uptime across 1,500+ live NHL broadcast events — exceeding contracted 99.5% SLA with zero escalations across three consecutive review cycles. Deep expertise in Avid-compatible workflows, codec troubleshooting (DNxHD, DNxHR, H.264, H.265, AVC-Intra, MXF/MOV), AWS MediaLive/MediaConnect/MediaPackage, ServiceNow case management, and Linux administration.",
 
   // =========================
   // CORE SKILLS (UI + AI)
   // =========================
   skills: [
     "AWS MediaLive",
+    "Avid Media Composer",
+    "Avid NEXIS/ISIS",
+    "ServiceNow",
     "Live Broadcasting",
-    "Docker",
+    "DNxHD / DNxHR",
+    "SRT / RTMP / HLS",
+    "Zixi / VTOC",
+    "Linux (CentOS/RHEL)",
+    "Datadog / CloudWatch",
+    "Docker / CI/CD",
+    "Python / Bash",
+    "Q-SYS / Crestron",
+    "VLAN / Layer 2/3",
+    "Dante AoIP",
     "Next.js 15",
     "TypeScript",
-    "Claude / Ollama",
-    "RAG Systems",
-    "Multi-Agent Architecture",
-    "Reliability Engineering",
     "Supabase",
-    "ServiceNow",
   ],
 
   // =========================
-  // STRUCTURED EXPERTISE (RAG CORE)
+  // STRUCTURED EXPERTISE (RAG CORE — keys match SkillSnapshot CATEGORY_LABELS)
   // =========================
   expertise: {
-    broadcasting: ["AWS MediaLive", "MediaPackage", "SRT / RTMP", "VTOC", "Live Monitoring", "ServiceNow"],
-    cloud: ["AWS", "Docker", "Vercel", "Supabase", "GitHub Actions", "CI/CD"],
-    ai: ["Claude", "Ollama", "LangGraph Agents", "n8n Workflows", "RAG Systems", "Multi-Agent"],
-    fullstack: ["Next.js 15", "TypeScript", "Tailwind CSS", "shadcn/ui", "React"],
-    platform: ["Reliability Engineering", "Observability", "Automation", "Documentation-first"],
+    broadcasting: [
+      "AWS MediaLive",
+      "MediaConnect",
+      "MediaPackage",
+      "Zixi / SRT / RTMP / HLS",
+      "VTOC / Clubstream",
+      "Sencore / Telstra / Adtec",
+      "Avid MediaCentral",
+      "DNxHD / DNxHR",
+      "MXF / MOV / MPEG-TS",
+      "VSAT / Satellite",
+    ],
+    cloud: [
+      "AWS VPC / EC2",
+      "Linux (CentOS/RHEL)",
+      "Docker / Containers",
+      "Python / Bash",
+      "Datadog / CloudWatch",
+      "ServiceNow",
+      "CI/CD",
+      "Grafana / LogicMonitor",
+    ],
+    ai: [
+      "Claude",
+      "Ollama",
+      "LangGraph ReAct Agent",
+      "LangChain LCEL",
+      "ChromaDB",
+      "RAG Pipelines",
+      "Llama 3.3 70B",
+      "n8n Workflows",
+    ],
+    fullstack: [
+      "Next.js 15",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "React",
+      "SQL",
+      "WordPress REST",
+      "LLM APIs",
+    ],
+    platform: [
+      "Q-SYS",
+      "Crestron NVX",
+      "Biamp Tesira",
+      "Dante AoIP",
+      "VLAN 802.1Q / QoS",
+      "Cisco IOS/IOS-XE",
+      "Fiber / OTDR",
+      "VSAT / EIRP",
+    ],
   },
 
   // =========================
   // IMPACT METRICS
   // =========================
   impact: {
-    feeds: 16,
-    uptime: "99.97%",
+    feeds: "1,500+",
+    uptime: "99.9%",
     projects: 4,
     recognition: "Top 300",
   },
@@ -60,11 +114,13 @@ export const profile = {
   tags: [
     "live-broadcasting",
     "nhl-broadcast",
+    "avid-workflows",
+    "aws-media-services",
+    "post-production",
     "ai-systems",
     "saas-founder",
     "platform-engineering",
-    "autonomous-ai",
-    "full-stack",
+    "vsat-engineering",
   ],
 
   // =========================
@@ -72,18 +128,18 @@ export const profile = {
   // =========================
   knowledgeAreas: {
     broadcasting:
-      "Supporting live NHL broadcasts with 16 simultaneous feeds, achieving 99.97% uptime using AWS MediaLive, MediaPackage, SRT/RTMP low-latency protocols, and ServiceNow for real-time incident management. Zero feed drops during Stanley Cup Finals Game 7.",
+      "Lead Technical Specialist at GlobalXperts supporting 1,500+ live NHL broadcast events on AWS MediaLive and MediaConnect — 99.9% uptime vs contracted 99.5% SLA, zero Presidio SLA escalations, 100% ServiceNow case compliance. Configured Sencore, Telstra, and Adtec encoder/decoder parameters for frame-accurate delivery. Managed VTOC for post-event archiving. Reduced incident response time by 35% via predictive alerting. Deep expertise in Avid-compatible workflows: IP video ingest/playout, codec troubleshooting (DNxHD, DNxHR, H.264/H.265, AVC-Intra, MXF/MOV), and MAM/NLE support.",
 
     ai:
-      "Building autonomous AI systems using Claude, Ollama, LangGraph-style agents, n8n workflows, RAG pipelines, and multi-agent architectures for privacy-first enterprise use cases. Projects include AetherAI (air-gapped OS) and PolyMind (multi-LLM platform).",
+      "Designed and presented AetherAI (on-premise enterprise AI automation suite) to GlobalXperts C-suite — 11-slide deck, 9 departments, 90-day roadmap; C-suite approved. NASSCOM Agentic AI Hackathon: built full RAG + Agentic pipeline — Llama 3.3 70B (Groq) + ChromaDB + LangChain LCEL + LangGraph ReAct Agent + Gradio UI, awarded 5-star Buddy Review. Built PolyMind multi-LLM platform. Stack: Claude, Ollama, LangChain, n8n, Python.",
 
     saas:
-      "Building production-grade B2B SaaS platforms with Next.js 15, TypeScript, Tailwind, Supabase (with RLS), and Claude. Led product, engineering, and go-to-market for The KPI Hub — an AI-synthesized market intelligence platform for founders.",
+      "Sole developer of The KPI Hub (thekpihub.com) — self-funded B2B SaaS intelligence platform with 95%-automated 5-engine AI content pipeline using Python, LLM APIs, WordPress REST, and SerpAPI. Built PolyMind multi-LLM interface. Stack: Next.js 15, TypeScript, Supabase (with RLS), Claude, Vercel, Tailwind CSS. Selected as India's Top 300 Builders at VibeCon 2025 (YC × Anthropic × Lightspeed × Razorpay).",
 
     platform:
-      "Reliability-first platform engineering with 99.97%+ uptime focus. Practices include observability, automation pipelines, documentation-first approach, incremental hardening, and CI/CD via GitHub Actions and Vercel.",
+      "Tier 3/4 incident response and SLA governance: 100% ServiceNow case management compliance, zero SLA breaches across 1,500+ events, 35% incident response time reduction via predictive alerting frameworks. RCA, bug tracking and reproduction, shift handoff documentation, version compatibility planning. VSAT delivery infrastructure for nationwide government e-learning: link budgets, EIRP calculations, bandwidth allocation, RF parameters.",
 
     networking:
-      "AV systems and enterprise networking with 5+ years of experience: Q-SYS, Crestron, AMX, HDBaseT, VLANs (802.1Q trunking), L2/L3 switching, RSTP/MSTP, BPDU Guard, DHCP Snooping, SOW/commissioning, and red-line drawings.",
+      "Designed VLAN-segmented, IGMP Snooping, QoS-enforced Layer 2/3 network topologies for multi-tenant broadcast delivery — applicable to Avid NEXIS fabric networking and engine zone bandwidth configuration. Cisco IOS/IOS-XE, HPE/Aruba, Juniper. DSP audio commissioning: Biamp Tesira, QSC Q-SYS, Shure IntelliMix, BSS Audio, ClearOne with Dante AoIP distribution. AV commissioning: Crestron NVX, Extron, AMX, HDBaseT, SIP/H.323/RTP.",
   },
 };

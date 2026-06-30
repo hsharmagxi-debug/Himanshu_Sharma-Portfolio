@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { profile } from "@/lib/profile";
 
 const CATEGORY_LABELS: Record<string, string> = {
-  broadcasting: "Broadcasting & Streaming",
-  cloud: "Cloud & Infrastructure",
+  broadcasting: "Broadcast & IP Video",
+  cloud: "Cloud, Linux & Monitoring",
   ai: "AI & Agentic Systems",
   fullstack: "Full-Stack & Product",
-  platform: "Platform Engineering",
+  platform: "AV, Networking & VSAT",
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -138,11 +138,11 @@ async function downloadReport() {
   // ── Delivery Capability ──────────────────────────────
   sectionLabel("Delivery Capability");
   const capabilities: [string, string][] = [
-    ["Broadcasting & Streaming", knowledgeAreas.broadcasting],
+    ["Broadcast & IP Video (NHL/AWS)", knowledgeAreas.broadcasting],
     ["AI & Agentic Systems", knowledgeAreas.ai],
     ["SaaS & Product Building", knowledgeAreas.saas],
-    ["Platform Engineering", knowledgeAreas.platform],
-    ["AV & Enterprise Networking", knowledgeAreas.networking],
+    ["SLA Governance & Incident Management", knowledgeAreas.platform],
+    ["AV, Networking & VSAT", knowledgeAreas.networking],
   ];
   for (const [label, desc] of capabilities) {
     rowLine(label, desc);
@@ -154,7 +154,7 @@ async function downloadReport() {
   // ── Impact ───────────────────────────────────────────
   sectionLabel("Impact at Scale");
   const metrics = [
-    `${impact.feeds} Live Feeds`,
+    `${impact.feeds} NHL Events`,
     `${impact.uptime} Uptime`,
     `${impact.projects}+ Projects Live`,
     `${impact.recognition} India Builder`,
@@ -275,7 +275,7 @@ export default function SkillSnapshot() {
               {/* Impact metrics */}
               <div className="grid grid-cols-4 gap-4 mb-8">
                 {[
-                  { label: "Live Feeds", value: profile.impact.feeds },
+                  { label: "NHL Events", value: profile.impact.feeds },
                   { label: "Uptime", value: profile.impact.uptime },
                   { label: "Projects", value: `${profile.impact.projects}+` },
                   { label: "Recognition", value: profile.impact.recognition },

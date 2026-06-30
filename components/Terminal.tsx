@@ -12,30 +12,32 @@ interface Line {
 }
 
 const SCRIPT: Line[] = [
-  { type: "cmd",     text: "$ whoami",                                          delay: 400 },
-  { type: "output",  text: "Himanshu Sharma",                                   delay: 300 },
-  { type: "muted",   text: "Technical Specialist · GlobalXperts (NHL Project)", delay: 200 },
-  { type: "blank",   text: "",                                                   delay: 300 },
-  { type: "cmd",     text: "$ cat profile.json",                                delay: 500 },
-  { type: "output",  text: "{",                                                  delay: 100 },
-  { type: "output",  text: '  "broadcast"   : "AWS MediaLive · MediaPackage · SRT/RTMP · VTOC",', delay: 80 },
-  { type: "output",  text: '  "cloud"       : "AWS · Docker · Vercel · Supabase · GitHub Actions",', delay: 80 },
-  { type: "output",  text: '  "ai"          : "Claude · Ollama · RAG · Multi-Agent · n8n",',        delay: 80 },
-  { type: "output",  text: '  "fullstack"   : "Next.js 15 · TypeScript · Tailwind · shadcn/ui",',  delay: 80 },
-  { type: "output",  text: '  "networking"  : "Q-SYS · Crestron · AMX · HDBaseT · VLANs",',       delay: 80 },
-  { type: "output",  text: '  "uptime"      : "99.97% · 16 simultaneous feeds · NHL",',            delay: 80 },
-  { type: "output",  text: '  "projects"    : ["The KPI Hub","AetherAI","PolyMind","Lumina"]',     delay: 80 },
-  { type: "output",  text: "}",                                                  delay: 200 },
-  { type: "blank",   text: "",                                                   delay: 300 },
-  { type: "cmd",     text: "$ aether status",                                   delay: 500 },
-  { type: "success", text: "✓  Claude        healthy   priority 1",             delay: 120 },
-  { type: "success", text: "✓  Ollama        healthy   priority 2",             delay: 120 },
-  { type: "success", text: "✓  ChromaDB      healthy   priority 3",             delay: 120 },
-  { type: "success", text: "✓  n8n           healthy   priority 4",             delay: 120 },
-  { type: "success", text: "✓  OpenWebUI     healthy   priority 5",             delay: 120 },
-  { type: "blank",   text: "",                                                   delay: 300 },
-  { type: "cmd",     text: "$ echo $AVAILABILITY",                              delay: 500 },
-  { type: "success", text: "OPEN_TO_WORK=true",                                 delay: 300 },
+  { type: "cmd",     text: "$ whoami",                                              delay: 400 },
+  { type: "output",  text: "Himanshu Sharma",                                       delay: 300 },
+  { type: "muted",   text: "Lead Technical Specialist · GlobalXperts (NHL/Presidio)", delay: 200 },
+  { type: "blank",   text: "",                                                       delay: 300 },
+  { type: "cmd",     text: "$ cat profile.json",                                    delay: 500 },
+  { type: "output",  text: "{",                                                      delay: 100 },
+  { type: "output",  text: '  "experience"  : "11+ years · Broadcast & Cloud Operations",',    delay: 80 },
+  { type: "output",  text: '  "broadcast"   : "1,500+ NHL events · 99.9% uptime · Zero SLA escalations",', delay: 80 },
+  { type: "output",  text: '  "avid"        : "DNxHD/DNxHR · H.264/H.265 · MXF/MOV · NEXIS/ISIS",', delay: 80 },
+  { type: "output",  text: '  "cloud"       : "AWS MediaLive · MediaConnect · MediaPackage · Docker",', delay: 80 },
+  { type: "output",  text: '  "monitoring"  : "ServiceNow · Datadog · CloudWatch · Zixi Zen Master",', delay: 80 },
+  { type: "output",  text: '  "networking"  : "VLAN 802.1Q · IGMP · Cisco · Fiber/OTDR · VSAT",',  delay: 80 },
+  { type: "output",  text: '  "ai"          : "AetherAI · PolyMind · LangGraph · ChromaDB · Llama 3.3 70B",', delay: 80 },
+  { type: "output",  text: '  "projects"    : ["The KPI Hub","AetherAI","PolyMind","Lumina"]',      delay: 80 },
+  { type: "output",  text: "}",                                                      delay: 200 },
+  { type: "blank",   text: "",                                                       delay: 300 },
+  { type: "cmd",     text: "$ aether status",                                       delay: 500 },
+  { type: "success", text: "✓  Claude        healthy   priority 1",                 delay: 120 },
+  { type: "success", text: "✓  Ollama        healthy   priority 2",                 delay: 120 },
+  { type: "success", text: "✓  ChromaDB      healthy   priority 3",                 delay: 120 },
+  { type: "success", text: "✓  n8n           healthy   priority 4",                 delay: 120 },
+  { type: "success", text: "✓  OpenWebUI     healthy   priority 5",                 delay: 120 },
+  { type: "blank",   text: "",                                                       delay: 300 },
+  { type: "cmd",     text: "$ echo $AVAILABILITY",                                  delay: 500 },
+  { type: "success", text: "AVAILABLE_IMMEDIATELY=true",                            delay: 200 },
+  { type: "success", text: "OPEN_TO_RELOCATION=true",                               delay: 200 },
 ];
 
 const COLOR: Record<LineType, string> = {
@@ -80,10 +82,9 @@ export default function Terminal() {
           <div className="p-7 font-mono text-sm leading-7 min-h-[420px]">
             {SCRIPT.slice(0, visible).map((line, i) => (
               <div key={i} className={COLOR[line.type]}>
-                {line.text || " "}
+                {line.text || " "}
               </div>
             ))}
-            {/* Blinking cursor */}
             {visible < SCRIPT.length && (
               <span className="inline-block w-2 h-4 bg-cyan-400 animate-pulse align-middle" />
             )}

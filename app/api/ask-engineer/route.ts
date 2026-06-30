@@ -13,67 +13,101 @@ const TOPICS: {
 }[] = [
   {
     key: "broadcasting",
-    label: "Live Broadcasting & Streaming",
-    keywords: ["broadcast", "nhl", "streaming", "medialive", "mediapackage", "srt", "rtmp", "vtoc", "live", "feed", "uptime", "servicenow", "incident", "monitoring"],
-    tools: ["AWS MediaLive", "MediaPackage", "SRT / RTMP", "VTOC", "ServiceNow", "CloudWatch"],
+    label: "Live Broadcasting, Streaming & Avid Workflows",
+    keywords: [
+      "broadcast", "nhl", "streaming", "medialive", "mediaconnect", "mediapackage",
+      "srt", "rtmp", "hls", "vtoc", "live", "avid", "media composer", "nexis", "isis",
+      "mediacental", "dnxhd", "dnxhr", "mxf", "mov", "codec", "ingest", "playout",
+      "mam", "nle", "editing", "sencore", "telstra", "adtec", "elemental", "zixi",
+      "mpeg-ts", "servicenow", "incident", "uptime", "sla", "tier 3", "tier 4",
+    ],
+    tools: [
+      "AWS MediaLive", "MediaConnect", "MediaPackage",
+      "Avid MediaCentral", "Avid NEXIS/ISIS", "Avid Media Composer",
+      "Zixi / SRT / RTMP / HLS", "VTOC", "Sencore / Telstra / Adtec",
+      "ServiceNow", "Datadog / CloudWatch",
+    ],
     principles: [
-      "Pre/post-game checklists for 100% compliance on every broadcast",
-      "Real-time monitoring across 16 simultaneous feeds",
-      "ServiceNow incident management with rapid triage protocols",
-      "Zero-escalation goal: resolve issues before they impact viewers",
-      "Low-latency SRT/RTMP protocols for mission-critical live events",
+      "1,500+ live NHL events supported — 99.9% uptime vs contracted 99.5% SLA",
+      "Zero Presidio SLA escalations across three consecutive review cycles",
+      "100% ServiceNow case management compliance — zero tickets beyond SLA threshold",
+      "35% incident response time reduction via predictive alerting frameworks",
+      "End-to-end case ownership: triage → bug reproduction → RCA → corrective action closure",
+      "Codec expertise directly transferable to Avid: DNxHD, DNxHR, H.264/H.265, AVC-Intra, MXF/MOV",
+      "VTOC post-event archiving analogous to Avid MAM / Interplay archiving workflows",
     ],
   },
   {
     key: "ai",
     label: "AI & Agentic Systems",
-    keywords: ["ai", "llm", "rag", "agent", "claude", "ollama", "embedding", "vector", "multi-agent", "n8n", "langraph", "autonomous", "aether", "polymind", "self-hosted"],
-    tools: ["Claude", "Ollama", "ChromaDB", "n8n", "Open WebUI", "FastAPI"],
+    keywords: [
+      "ai", "llm", "rag", "agent", "claude", "ollama", "embedding", "vector",
+      "multi-agent", "n8n", "langgraph", "langchain", "autonomous", "aether",
+      "polymind", "self-hosted", "llama", "nasscom", "hackathon", "chromadb",
+    ],
+    tools: ["Claude", "Ollama", "LangGraph ReAct Agent", "LangChain LCEL", "ChromaDB", "n8n", "Groq / Llama 3.3 70B"],
     principles: [
+      "AetherAI — on-premise enterprise AI suite; 11-slide deck, 9 departments, 90-day roadmap; C-suite approved",
+      "NASSCOM Agentic AI Hackathon: full RAG + Agentic pipeline — Llama 3.3 70B + ChromaDB + LangGraph ReAct + Gradio",
       "Privacy-first: self-hosted AI for air-gapped enterprise environments",
       "RAG pipeline: chunk → embed → store in vector DB → retrieve → generate",
-      "Multi-agent orchestration for parallel task execution",
-      "LangGraph-style agents with tool-use for workflow automation",
+      "Multi-agent orchestration for parallel task execution using LangGraph",
       "Zero vendor lock-in: open-source stack with local inference via Ollama",
     ],
   },
   {
     key: "saas",
     label: "SaaS Building & Product Engineering",
-    keywords: ["saas", "product", "kpi", "hub", "supabase", "next", "nextjs", "startup", "founder", "b2b", "mrr", "monetization", "pipeline", "intelligence"],
-    tools: ["Next.js 15", "TypeScript", "Supabase", "Claude", "Vercel", "Tailwind CSS"],
+    keywords: [
+      "saas", "product", "kpi", "hub", "supabase", "next", "nextjs", "startup",
+      "founder", "b2b", "mrr", "monetization", "pipeline", "intelligence",
+      "thekpihub", "polymind", "lumina",
+    ],
+    tools: ["Next.js 15", "TypeScript", "Supabase", "Claude", "Vercel", "Tailwind CSS", "WordPress REST", "SerpAPI"],
     principles: [
+      "The KPI Hub — self-funded B2B SaaS; 95%-automated 5-engine AI content pipeline",
       "Ship fast, harden incrementally — production-grade from day one",
       "Supabase RLS for row-level security on multi-tenant data",
       "AI-synthesized content pipelines for automated intelligence briefs",
-      "Documentation-first approach for onboarding and scale",
-      "Multiple monetization streams validated before scaling spend",
+      "Selected as India's Top 300 Builders at VibeCon 2025 (YC × Anthropic × Lightspeed × Razorpay)",
     ],
   },
   {
     key: "platform",
-    label: "Platform Engineering & Reliability",
-    keywords: ["platform", "reliability", "observability", "automation", "ci", "cd", "deploy", "uptime", "sla", "docker", "vercel", "github actions", "devops"],
-    tools: ["Docker", "GitHub Actions", "Vercel", "AWS", "Supabase", "CI/CD Pipelines"],
+    label: "SLA Governance & Incident Management",
+    keywords: [
+      "sla", "incident", "platform", "reliability", "observability", "automation",
+      "ci", "cd", "deploy", "uptime", "docker", "vercel", "github actions",
+      "devops", "rca", "servicenow", "datadog", "monitoring", "runbook", "sop",
+    ],
+    tools: ["ServiceNow", "Datadog", "Grafana", "AWS CloudWatch", "Zixi Zen Master", "LogicMonitor", "JIRA"],
     principles: [
-      "99.97%+ uptime focus — reliability is a feature, not an afterthought",
+      "99.9% uptime delivered — SLA governance across 1,500+ NHL broadcast events",
+      "Zero SLA escalations across all monitoring cycles; 100% shift handoff compliance",
+      "35% MTTR reduction via predictive alerting and structured escalation workflows",
+      "RCA documentation with structured evidence — validated by US client ops team",
+      "SOPs, troubleshooting runbooks, and shift handoff templates adopted team-wide",
       "Automation over manual toil: everything that can run on a schedule, should",
-      "Observability built-in: logs, metrics, and alerts from day one",
-      "Incremental hardening: ship first, secure and optimize in layers",
-      "Documentation-first: runbooks, SOPs, and checklists before incidents happen",
     ],
   },
   {
     key: "networking",
-    label: "AV Systems & Enterprise Networking",
-    keywords: ["av", "audio", "video", "crestron", "qsys", "amx", "hdbaset", "vlan", "switching", "network", "enterprise", "commissioning", "rstp", "mstp"],
-    tools: ["Q-SYS", "Crestron", "AMX", "HDBaseT", "L2/L3 Switches", "VLAN 802.1Q"],
+    label: "AV Systems, Networking & VSAT Engineering",
+    keywords: [
+      "av", "audio", "video", "crestron", "qsys", "q-sys", "amx", "hdbaset",
+      "vlan", "switching", "network", "enterprise", "commissioning", "rstp", "mstp",
+      "dante", "aoi", "biamp", "tesira", "shure", "bss", "clearone", "dsp",
+      "vsat", "satellite", "eirp", "rf", "link budget", "hts", "fiber", "otdr",
+      "cisco", "aruba", "juniper", "layer 2", "layer 3",
+    ],
+    tools: ["Q-SYS / QSC", "Crestron NVX", "Biamp Tesira", "Dante AoIP", "Shure IntelliMix", "BSS Audio", "AMX / Extron", "Cisco IOS/IOS-XE", "HPE/Aruba"],
     principles: [
-      "SOW-driven delivery: scope, commission, and red-line drawings for every project",
-      "VLAN segmentation (802.1Q trunking) for AV/IT traffic isolation",
-      "RSTP/MSTP with BPDU Guard and DHCP Snooping for network stability",
-      "Q-SYS/Crestron programming for room automation and DSP routing",
-      "HDBaseT for long-distance uncompressed AV over structured cabling",
+      "VLAN-segmented, IGMP Snooping, QoS-enforced Layer 2/3 topologies for multi-tenant broadcast delivery",
+      "VSAT satellite delivery: link budgets, EIRP calculations, RF parameters — nationwide government broadcast infrastructure",
+      "Fiber route planning, OTDR testing, and splicing for broadcast connectivity",
+      "DSP audio commissioning with Dante AoIP distribution — applicable to Pro Tools HDX/Native I/O",
+      "SAN/NAS storage architecture; bandwidth & redundancy planning",
+      "SIP / H.323 / RTP unified communications; MTR-Pro, Cisco Webex, Zoom Rooms",
     ],
   },
 ];
@@ -107,20 +141,20 @@ export async function POST(req: Request) {
       answer: `Hi, I'm ${profile.identity.name} — ${profile.identity.title}.
 
 I can answer questions on:
-  · Live broadcasting & streaming infrastructure
-  · AI & agentic systems (Claude, Ollama, RAG, multi-agent)
-  · SaaS building & product engineering
-  · Platform engineering & reliability
-  · AV systems & enterprise networking
+  · Live broadcasting, streaming & Avid-compatible workflows (NHL / AWS MediaLive)
+  · AI & agentic systems (AetherAI, LangGraph, RAG, NASSCOM Hackathon)
+  · SaaS building & product engineering (The KPI Hub)
+  · SLA governance & incident management (ServiceNow, Tier 3/4)
+  · AV systems, networking & VSAT engineering
 
-Try asking something like "How do you manage live NHL broadcasts?" or "How did you build AetherAI?"`,
+Try asking something like "How do you manage live NHL broadcasts?" or "Tell me about your Avid workflow experience."`,
     });
   }
 
   const knowledgeBase = profile.knowledgeAreas[topic.key];
 
   const answer = `${profile.identity.name} on ${topic.label}
-${"─".repeat(48)}
+${"─".repeat(52)}
 
 ${knowledgeBase}
 
@@ -131,10 +165,10 @@ KEY PRINCIPLES
 ${topic.principles.map((p) => `  ✔ ${p}`).join("\n")}
 
 IMPACT
-  · ${profile.impact.feeds} simultaneous live feeds · ${profile.impact.uptime} uptime
+  · ${profile.impact.feeds} live NHL events · ${profile.impact.uptime} uptime
   · ${profile.impact.projects}+ production projects · ${profile.impact.recognition} India Builder (VibeCon 2025)
 
-─────────────────────────────────────────────────
+─────────────────────────────────────────────────────
 Have a deeper question? → hsharma.gxi@gmail.com`;
 
   return NextResponse.json({ answer });

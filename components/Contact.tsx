@@ -23,8 +23,8 @@ export default function Contact() {
             Open to the Right Opportunity
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto leading-relaxed">
-            Open to technical roles in live broadcast infrastructure, cloud-native platforms, or AI systems —
-            and builder conversations around product and founding. If you&apos;re building something ambitious, let&apos;s connect.
+            Open to technical roles in broadcast engineering, cloud media operations, post-production support,
+            or AI-driven platforms. Available immediately and open to relocation. If you&apos;re building something ambitious, let&apos;s connect.
           </p>
         </motion.div>
 
@@ -40,13 +40,13 @@ export default function Contact() {
             {
               icon: MapPin,
               label: "Location",
-              value: "Delhi-NCR, India",
-              sub: "Remote / PAN India preferred",
+              value: "New Delhi, India",
+              sub: "Open to Relocation",
             },
             {
               icon: Clock,
               label: "Availability",
-              value: "Open to Work",
+              value: "Available Immediately",
               sub: "Currently: GlobalXperts (NHL)",
             },
             {
@@ -97,7 +97,7 @@ export default function Contact() {
         >
           {[
             { href: "https://github.com/hsharmagxi-debug", Icon: FaGithub, label: "GitHub" },
-            { href: "https://www.linkedin.com/in/himanshusharma08368895811/", Icon: FaLinkedin, label: "LinkedIn" },
+            { href: "https://www.linkedin.com/in/himanshu-sharma-broadcast/", Icon: FaLinkedin, label: "LinkedIn" },
           ].map(({ href, Icon, label }) => (
             <a
               key={label}
