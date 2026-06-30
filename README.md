@@ -1,12 +1,10 @@
-# README.md
+# Himanshu Sharma — Technical Specialist & AI Builder Portfolio
 
-# Vikash Portfolio v2 — AI, DevOps & Platform Engineering Portfolio
-
-> Enterprise-grade personal portfolio showcasing 15+ years of experience across Cloud, DevOps, Platform Engineering, GenAI, Observability, and Infrastructure Automation.
+> Enterprise-grade personal portfolio showcasing expertise in live broadcasting infrastructure, AI & agentic systems, SaaS product engineering, platform reliability, and AV/enterprise networking.
 
 ---
 
-# Table of Contents
+## Table of Contents
 
 * Overview
 * Live Demo
@@ -19,52 +17,47 @@
 * Resume System Architecture
 * Markdown → Preview → PDF Pipeline
 * GitHub Actions Automation
-* Release Management
 * Vercel Deployment
 * Engineering Case Studies
-* Ask Vikash AI Architecture
-* Build-Time RAG Architecture (Planned)
-* Knowledge Center Repository
+* Ask Himanshu Engineering Chat
 * Repository Structure
 * Development Workflow
 * Troubleshooting Guide
 * Roadmap
-* Architectural Decisions
-* Pros & Cons
 * License
 
 ---
 
-# Project Overview
+## Project Overview
 
-This portfolio is designed as an enterprise-grade engineering showcase rather than a traditional resume website.
+This portfolio is designed as an enterprise-grade engineering showcase, not a traditional resume website.
 
 The platform demonstrates:
 
-* Cloud Engineering
-* Platform Engineering
-* DevOps Leadership
-* GenAI Development
-* Infrastructure as Code
-* Observability
-* Site Reliability Engineering
-* Resume Automation
-* Build-Time RAG Architecture
-* Knowledge Engineering
+* Live Broadcasting & Streaming Infrastructure (NHL / AWS MediaLive)
+* AI & Agentic Systems (Claude, Ollama, RAG, ChromaDB, n8n)
+* SaaS Product Building (The KPI Hub — B2B intelligence platform)
+* Platform Engineering & Reliability (99.97%+ uptime focus)
+* AV Systems & Enterprise Networking (Q-SYS, Crestron, AMX, HDBaseT)
+* Resume Automation (Markdown → PDF via GitHub Actions)
 
 ---
 
-# Features
+## Live Demo
 
-## V1 Features
+**Production:** https://himanshu-sharma-portfolio-eosin.vercel.app
+
+---
+
+## Features
 
 ### Hero Section
 
 * Animated professional title rotation
 * Modern enterprise UI
 * Responsive design
-* Social links
-* Resume download support
+* Social links (GitHub, LinkedIn)
+* Capability Report download (jsPDF, in-browser generation)
 
 ---
 
@@ -72,19 +65,11 @@ The platform demonstrates:
 
 Technology visualization for:
 
-* AWS
-* Terraform
-* Kubernetes
-* Jenkins
-* GitHub Actions
-* ArgoCD
-* Python
-* Bedrock
-* GenAI
-* DevSecOps
-* OpenTelemetry
-* Grafana
-* Prometheus
+* AWS MediaLive / MediaPackage / CloudWatch
+* Docker / GitHub Actions / Vercel
+* Claude / Ollama / ChromaDB / n8n / Open WebUI
+* Next.js 15 / TypeScript / Supabase / Tailwind CSS
+* Q-SYS / Crestron / AMX / HDBaseT / VLAN 802.1Q
 
 ---
 
@@ -92,16 +77,26 @@ Technology visualization for:
 
 Interactive terminal showcasing:
 
-* forge status
-* AI FORGE
-* Multi-router architecture
-* DevOps workflows
+* `aether status` — live AI stack (Claude, Ollama, ChromaDB, n8n, OpenWebUI)
+* `himanshu@forge` prompt
+* Broadcasting uptime and feed count
+* `OPEN_TO_WORK=true` availability flag
 
 ---
 
 ### Engineering Timeline
 
-Professional experience visualization.
+Professional experience visualization:
+
+* Technical Specialist — Broadcasting & Streaming / GlobalXperts (NHL Project) / 2025–Present
+* Founder & CEO / The KPI Hub / 2025–Present
+* AV Systems & Enterprise Network Specialist / Various Clients / ~2019–2025
+
+Certifications:
+
+* AWS MediaLive & MediaPackage Specialist (Feb 2026)
+* ServiceNow Certified
+* VibeCon 2025 Top 300 India Builder
 
 ---
 
@@ -109,14 +104,24 @@ Professional experience visualization.
 
 Showcases:
 
-* AI FORGE
-* Enterprise Platform Engineering
-* GenAI Systems
-* Cloud Automation
+* The KPI Hub — B2B SaaS intelligence platform (Live)
+* AetherAI — Self-hosted, privacy-first AI Operating System (Open Source)
+* PolyMind — Multi-LLM platform with RAG (Active)
+* Lumina Numerology — Offline PWA numerology app (Live)
 
 ---
 
-# V2 Features
+### Ask Himanshu Engineering Chat
+
+Route: `/engineering`
+
+Keyword-matched AI assistant covering:
+
+* Live broadcasting & streaming infrastructure
+* AI & agentic systems (Claude, Ollama, RAG, multi-agent)
+* SaaS building & product engineering
+* Platform engineering & reliability
+* AV systems & enterprise networking
 
 ---
 
@@ -133,88 +138,28 @@ Automatically supports:
 ```text
 Markdown
 ↓
-
 Web Preview
-
 ↓
-
 PDF Generation
-
 ↓
-
 Download Button
-
 ↓
-
 GitHub Actions
-
 ↓
-
 Release Artifacts
 ```
 
 ---
 
-## Resume Download Component
+## Technology Stack
 
-Location:
-
-```text
-components/ResumeDownload.tsx
-```
-
-Downloads:
-
-```text
-public/resume.pdf
-```
-
----
-
-## Test Resume Preview
-
-Route:
-
-```text
-/test-resume
-```
-
-Purpose:
-
-Preview markdown rendering before PDF generation.
-
----
-
-## Engineering Case Studies
-
-Route:
-
-```text
-/engineering
-```
-
-Contains:
-
-* CI/CD Architecture
-* Jenkins vs GitHub Actions
-* Terraform State Management
-* DevSecOps
-* Observability
-* Interview Scenarios
-
----
-
-# Technology Stack
-
----
-
-## Frontend
+### Frontend
 
 ```text
 Next.js 15
 React 19
 TypeScript
-TailwindCSS
+TailwindCSS v4
 Framer Motion
 React Icons
 Lucide Icons
@@ -223,7 +168,7 @@ React Markdown
 
 ---
 
-## Resume System
+### Resume System
 
 ```text
 Markdown
@@ -234,78 +179,50 @@ PDF Generation
 
 ---
 
-## Future AI Stack
+### Capability Report (in-browser)
 
 ```text
-Build-Time RAG
-Markdown Knowledge Bases
-MiniSearch
-LlamaIndex
-Embeddings
-Static JSON Retrieval
+jsPDF (browser-side, no server)
+Profile data from lib/profile.ts
+Downloads as: Himanshu-Sharma-Capability-Report.pdf
 ```
 
 ---
 
-# Architecture
+## Architecture
 
 ```mermaid
 flowchart TB
 
-A[Resume.md]
+A[lib/profile.ts — single source of truth]
 
-A --> B[React Markdown Preview]
+A --> B[SkillSnapshot.tsx — Capability Report PDF]
+A --> C[route.ts — Ask Himanshu AI chat]
+A --> D[Terminal.tsx — CLI showcase]
+A --> E[Timeline.tsx — Career history]
 
-B --> C[Puppeteer PDF Generator]
-
-C --> D[public/resume.pdf]
-
-D --> E[Resume Download Component]
-
-E --> F[Website Users]
+F[resume/resume.md]
+F --> G[React Markdown Preview]
+G --> H[Puppeteer PDF Generator]
+H --> I[public/resume.pdf]
+I --> J[ResumeDownload Component]
 ```
 
 ---
 
-# Future Architecture
-
-```mermaid
-flowchart TB
-
-GitHubRepos --> Collector
-
-Resume --> Collector
-
-KnowledgeCenter --> Collector
-
-PDFs --> Collector
-
-Collector --> Chunker
-
-Chunker --> Embeddings
-
-Embeddings --> JSONIndex
-
-JSONIndex --> BuildArtifacts
-
-BuildArtifacts --> NextJS
-
-NextJS --> AskVikashAI
-```
-
----
-
-# Repository Structure
+## Repository Structure
 
 ```text
-Vikash-Portfolio
+Himanshu_Sharma-Portfolio
 
 ├── app
 │   ├── engineering
-│   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   └── [slug]/page.tsx
 │   │
-│   ├── test-resume
-│   │   └── page.tsx
+│   ├── api
+│   │   └── ask-engineer
+│   │       └── route.ts
 │   │
 │   └── page.tsx
 │
@@ -314,14 +231,36 @@ Vikash-Portfolio
 │   ├── Navbar.tsx
 │   ├── Skills.tsx
 │   ├── Projects.tsx
+│   ├── Experience.tsx
+│   ├── Timeline.tsx
+│   ├── Terminal.tsx
+│   ├── SkillSnapshot.tsx
+│   ├── Contact.tsx
 │   ├── ResumeDownload.tsx
+│   ├── FloatingChat.tsx
 │   └── EngineeringChat.tsx
+│
+├── lib
+│   └── profile.ts
+│
+├── src
+│   ├── lib
+│   │   └── github.ts
+│   └── components
+│       └── GitHubShowcase.tsx
+│
+├── content
+│   └── case-studies
+│       ├── cicd.md
+│       ├── terraform-state.md
+│       ├── devsecops.md
+│       └── observability.md
 │
 ├── resume
 │   └── resume.md
 │
 ├── build-scripts
-│   └── generate-pdf.js
+│   └── generate-resume-pdf.js
 │
 ├── public
 │   └── resume.pdf
@@ -335,21 +274,19 @@ Vikash-Portfolio
 
 ---
 
-# Local Setup Guide
+## Local Setup Guide
 
----
-
-## Clone Repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/vikas0486/Vikash-Portfolio.git
+git clone https://github.com/hsharmagxi-debug/Himanshu_Sharma-Portfolio.git
 
-cd Vikash-Portfolio
+cd Himanshu_Sharma-Portfolio
 ```
 
 ---
 
-## Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
@@ -357,23 +294,7 @@ npm install
 
 ---
 
-## Install React Markdown
-
-```bash
-npm install react-markdown
-```
-
----
-
-## Install Puppeteer
-
-```bash
-npm install puppeteer
-```
-
----
-
-# Running Development Server
+## Running Development Server
 
 ```bash
 npm run dev
@@ -389,7 +310,7 @@ http://localhost:3000
 
 ---
 
-# Production Build Test
+## Production Build Test
 
 Always test before deployment:
 
@@ -399,27 +320,19 @@ npm run build
 
 ---
 
-# Resume System
+## Resume System
 
----
-
-## Source of Truth
+### Source of Truth
 
 ```text
 resume/resume.md
 ```
 
-Never edit PDFs manually.
-
-Only update:
-
-```text
-resume.md
-```
+Never edit PDFs manually. Only update `resume.md`.
 
 ---
 
-# Resume Preview
+### Resume Preview
 
 Run:
 
@@ -435,15 +348,13 @@ http://localhost:3000/test-resume
 
 ---
 
-# PDF Generation
+### PDF Generation
 
 Generate:
 
 ```bash
-node build-scripts/generate-pdf.js
+node build-scripts/generate-resume-pdf.js
 ```
-
----
 
 Generated file:
 
@@ -453,183 +364,40 @@ public/resume.pdf
 
 ---
 
-# Resume Download Component
+## GitHub Actions
 
-File:
-
-```text
-components/ResumeDownload.tsx
-```
-
-Example:
-
-```tsx
-export default function ResumeDownload() {
-
-return (
-
-<a
-href="/resume.pdf"
-download
-target="_blank"
->
-
-Download Resume
-
-</a>
-
-)
-
-}
-```
-
----
-
-# GitHub Actions
-
-Workflow:
-
-```text
-.github/workflows/resume-pdf.yml
-```
-
-Purpose:
+Workflow: `.github/workflows/resume-pdf.yml`
 
 Automatically:
 
 ```text
-Push
-
+Push to main (resume/resume.md changed)
 ↓
-
 Generate PDF
-
 ↓
-
 Commit Artifact
-
 ↓
-
-Create Release Asset
+Auto-deploy via Vercel
 ```
 
 ---
 
-# Git Tags
+## Vercel Deployment
 
-List:
+Every push to `main` auto-deploys to production via Vercel CI/CD integration.
 
-```bash
-git tag
-```
-
----
-
-Delete:
+Manual deploy:
 
 ```bash
-git tag -d v1
-```
-
----
-
-Remote Delete:
-
-```bash
-git push origin :refs/tags/v1
-```
-
----
-
-Create:
-
-```bash
-git tag -a v2 -m "Portfolio V2"
-
-git push origin v2
-```
-
----
-
-# GitHub Release Process
-
----
-
-Push Code:
-
-```bash
-git add .
-
-git commit -m "feat: Resume automation system"
-
+npm run build   # verify locally first
+git add <files>
+git commit -m "message"
 git push origin main
 ```
 
 ---
 
-Create Release:
-
-```bash
-git tag -a v2 -m "Portfolio Version 2"
-
-git push origin v2
-```
-
----
-
-Open:
-
-```text
-GitHub
-
-↓
-
-Releases
-
-↓
-
-Create Release
-```
-
----
-
-# Vercel Deployment
-
----
-
-## Install CLI
-
-```bash
-npm install -g vercel
-```
-
----
-
-## Login
-
-```bash
-vercel login
-```
-
----
-
-## Deploy
-
-```bash
-vercel
-```
-
----
-
-## Production
-
-```bash
-vercel --prod
-```
-
----
-
-# Pre-Deployment Checklist
+## Pre-Deployment Checklist
 
 Always verify:
 
@@ -641,236 +409,13 @@ Must show:
 
 ```text
 Compiled Successfully
-
 Lint Passed
-
 Types Passed
 ```
 
 ---
 
-# Engineering Case Studies
-
-Route:
-
-```text
-/engineering
-```
-
----
-
-Contains:
-
----
-
-## CI/CD
-
-Topics:
-
-* Jenkins
-* GitHub Actions
-* Rollbacks
-* Deployment Strategies
-
----
-
-## Terraform
-
-Topics:
-
-* State Files
-* Remote State
-* Locking
-* Modules
-* Multi-Environment Design
-
----
-
-## DevSecOps
-
-Topics:
-
-* SonarQube
-* SAST
-* DAST
-* IAM
-* Secrets Management
-
----
-
-## Observability
-
-Topics:
-
-* OpenTelemetry
-* Prometheus
-* Grafana
-* Dynatrace
-
----
-
-## Interview Questions
-
-Topics:
-
-* System Design
-* Platform Engineering
-* DevOps Architecture
-* Leadership Questions
-
----
-
-# Ask Vikash AI
-
-Planned Feature:
-
-```text
-User Question
-
-↓
-
-Mini RAG Engine
-
-↓
-
-Knowledge Base
-
-↓
-
-Static Retrieval
-
-↓
-
-Response Generation
-```
-
----
-
-Examples:
-
-```text
-How do you manage Terraform State?
-
-Why GitHub Actions over Jenkins?
-
-How do you implement DevSecOps?
-
-What is your CI/CD strategy?
-```
-
----
-
-# Build-Time RAG
-
-Architecture:
-
----
-
-Sources:
-
-```text
-Resume
-
-GitHub Repositories
-
-AI FORGE
-
-Knowledge Center
-
-Markdown Notes
-
-PDF Documents
-```
-
----
-
-Pipeline:
-
-```text
-Collector
-
-↓
-
-Chunker
-
-↓
-
-Embeddings
-
-↓
-
-JSON Index
-
-↓
-
-Static Deployment
-```
-
----
-
-No:
-
-```text
-No Pinecone
-
-No Weaviate
-
-No AWS Costs
-
-No Runtime Expenses
-```
-
----
-
-# Knowledge Center Repository
-
-Future:
-
-```text
-Vikash-Knowledge-Center
-```
-
----
-
-Purpose:
-
-Store:
-
-```text
-Markdown
-
-PDFs
-
-Interview Notes
-
-Architecture Notes
-
-Terraform Examples
-
-Cloud Designs
-```
-
----
-
-Example:
-
-```text
-knowledge
-
-├── terraform
-├── cicd
-├── kubernetes
-├── genai
-├── aws
-├── sre
-└── interviews
-```
-
----
-
-# Development Workflow
-
----
+## Development Workflow
 
 Create Branch:
 
@@ -878,17 +423,12 @@ Create Branch:
 git checkout -b feature/new-feature
 ```
 
----
-
 Commit:
 
 ```bash
-git add .
-
+git add <files>
 git commit -m "feat: add feature"
 ```
-
----
 
 Push:
 
@@ -896,68 +436,44 @@ Push:
 git push origin feature/new-feature
 ```
 
----
-
 Merge:
 
 ```bash
 git checkout main
-
 git merge feature/new-feature
+git push origin main
 ```
 
 ---
 
-Release:
+## Troubleshooting Guide
 
-```bash
-git tag -a v3 -m "Release V3"
-
-git push origin v3
-```
-
----
-
-# Troubleshooting Guide
-
----
-
-## Build Errors
-
-Run:
+### Build Errors
 
 ```bash
 npm run build
 ```
 
----
-
-## Missing Modules
+### Missing Modules
 
 ```bash
 npm install
 ```
 
----
+### ESLint `react/no-unescaped-entities`
 
-## Resume Download Not Working
+Use `&apos;` for apostrophes in JSX: `I&apos;ve` not `I've`
 
-Verify:
+### Resume Download Not Working
 
-```text
-public/resume.pdf
-```
+Verify `public/resume.pdf` exists.
 
-Exists.
-
----
-
-## PDF Generator Timeout
+### PDF Generator Timeout
 
 Use:
 
 ```js
-waitUntil:"domcontentloaded"
+waitUntil: "domcontentloaded"
 ```
 
 Instead of:
@@ -966,35 +482,19 @@ Instead of:
 networkidle0
 ```
 
----
-
-## Port Already Used
-
-Example:
+### Port Already Used
 
 ```text
-3000 busy
-
-↓
-
-3002 allocated
+3000 busy → 3002 allocated
 ```
 
-Access:
-
-```text
-localhost:3002
-```
+Access: `http://localhost:3002`
 
 ---
 
-# Roadmap
+## Roadmap
 
----
-
-## V1
-
-Completed:
+### V1 — Completed
 
 ```text
 Portfolio
@@ -1002,14 +502,10 @@ Projects
 Skills
 Hero
 Timeline
-Resume Download
+Contact
 ```
 
----
-
-## V2
-
-Completed:
+### V2 — Completed
 
 ```text
 Resume Automation
@@ -1017,129 +513,71 @@ Markdown Preview
 PDF Generation
 GitHub Actions
 Engineering Pages
+Ask Himanshu AI Chat
+Capability Report (jsPDF)
 ```
 
----
-
-## V3
-
-Planned:
+### V3 — Planned
 
 ```text
-Profile Kit Generator
-
-Engineering Breakdowns
-
-Dynamic Parsing
-
-Knowledge Center
+Broadcasting case studies
+AI architecture breakdowns
+Knowledge center (AetherAI, PolyMind docs)
 ```
 
----
-
-## V4
-
-Planned:
+### V4 — Planned
 
 ```text
 Build-Time RAG
-
 AI Search
-
 MiniSearch
-
-Embeddings
-
 Static Retrieval
 ```
 
 ---
 
-## V5
+## Architectural Decisions
 
-Planned:
-
-```text
-Ask Vikash AI
-
-Interview Assistant
-
-Architecture Discussions
-
-Enterprise Knowledge Base
-```
-
----
-
-# Architectural Decisions
-
----
-
-## Why Markdown?
-
-Pros:
+### Why Markdown?
 
 ```text
 Human Readable
-
 Git Friendly
-
 Easy Automation
-
 Version Control
 ```
 
----
-
-## Why Build-Time RAG?
-
-Pros:
+### Why jsPDF (in-browser)?
 
 ```text
-No Runtime Cost
-
-No Database
-
-GitHub Friendly
-
-Static Hosting Compatible
+No server cost
+No Puppeteer dependency at runtime
+Instant download
+Works on Vercel serverless
 ```
 
----
-
-## Why GitHub Actions?
-
-Pros:
+### Why GitHub Actions?
 
 ```text
 Free
-
 Integrated
-
 Version Controlled
-
-Easy Releases
+Auto-deploys resume PDF on change
 ```
 
----
-
-## Why NextJS?
-
-Pros:
+### Why Next.js 15?
 
 ```text
 SEO
-
 Performance
-
 App Router
-
 Type Safety
+Vercel native CI/CD
 ```
 
 ---
 
-# License
+## License
 
 MIT License
 
@@ -1147,10 +585,10 @@ MIT License
 
 Built by:
 
-Vikash Jaiswal
+Himanshu Sharma
 
-Lead Platform Engineer
+Technical Specialist & AI Builder · Founder, The KPI Hub
 
-Cloud | DevOps | GenAI | Platform Engineering
+Broadcasting | AI | SaaS | Platform Engineering | AV Networking
 
 2026
