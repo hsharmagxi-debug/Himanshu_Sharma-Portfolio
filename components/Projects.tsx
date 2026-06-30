@@ -40,7 +40,7 @@ export default function Projects() {
         <div className="flex items-end justify-between mb-12">
           <div>
             <h2 className="text-4xl font-semibold tracking-tight">Featured Projects</h2>
-            <p className="text-white/60 mt-2">Production-grade systems I've built and continue to evolve.</p>
+            <p className="text-white/60 mt-2">Production-grade systems I&apos;ve built and continue to evolve.</p>
           </div>
         </div>
 
