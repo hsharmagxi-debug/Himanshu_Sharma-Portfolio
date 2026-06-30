@@ -28,7 +28,6 @@ const EXPERIENCE = [
     bullets: [
       "Building a high-trust B2B SaaS intelligence platform delivering real-time category intelligence via AI-synthesized daily briefs — 95%-automated 5-engine AI content pipeline (Python, LLM APIs, WordPress REST, SerpAPI).",
       "Stack: Next.js 15, TypeScript, Tailwind, Supabase (with RLS), Claude 3.5 Sonnet, Vercel.",
-      "Selected as India's Top 300 Builders at VibeCon 2025 (YC × Anthropic × Lightspeed × Razorpay).",
     ],
     tags: ["Next.js 15", "TypeScript", "Supabase", "Claude", "SaaS", "AI Pipelines"],
   },

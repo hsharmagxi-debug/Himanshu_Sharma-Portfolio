@@ -138,7 +138,7 @@ async function downloadReport() {
   // ── Delivery Capability ──────────────────────────────
   sectionLabel("Delivery Capability");
   const capabilities: [string, string][] = [
-    ["Broadcast & IP Video (NHL/AWS)", knowledgeAreas.broadcasting],
+    ["Broadcasting, IP Video & Avid Workflows", knowledgeAreas.broadcasting],
     ["AI & Agentic Systems", knowledgeAreas.ai],
     ["SaaS & Product Building", knowledgeAreas.saas],
     ["SLA Governance & Incident Management", knowledgeAreas.platform],

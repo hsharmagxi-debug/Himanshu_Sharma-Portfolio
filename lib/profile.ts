@@ -18,29 +18,24 @@ export const profile = {
     "Broadcast and cloud operations engineer with 11+ years of hands-on experience in live streaming operations, IP video workflows, post-production pipeline support, and Tier 3/4 technical troubleshooting across globally distributed 24×7×365 teams. Delivered 99.9% uptime across 1,500+ live NHL broadcast events — exceeding contracted 99.5% SLA with zero escalations across three consecutive review cycles. Deep expertise in Avid-compatible workflows, codec troubleshooting (DNxHD, DNxHR, H.264, H.265, AVC-Intra, MXF/MOV), AWS MediaLive/MediaConnect/MediaPackage, ServiceNow case management, and Linux administration. Also building production-grade SaaS and autonomous AI systems as Founder of The KPI Hub.",
 
   // =========================
-  // CORE SKILLS (UI + AI)
+  // PLATFORM COMPETENCIES — operational/methodological skills
+  // distinct from expertise{} to avoid duplication in SkillSnapshot
   // =========================
   skills: [
-    "AWS MediaLive",
-    "Avid Media Composer",
-    "Avid NEXIS/ISIS",
-    "ServiceNow",
-    "Live Broadcasting",
-    "DNxHD / DNxHR",
-    "SRT / RTMP / HLS",
-    "Zixi / VTOC",
-    "Linux (CentOS/RHEL)",
-    "Datadog / CloudWatch",
-    "Claude / Ollama",
-    "RAG Systems",
-    "Docker / CI/CD",
-    "Python / Bash",
-    "Q-SYS / Crestron",
-    "VLAN / Layer 2/3",
-    "Dante AoIP",
-    "Next.js 15",
-    "TypeScript",
-    "Supabase",
+    "24×7×365 Live Operations",
+    "Tier 3/4 Technical Support",
+    "SLA Governance & Compliance",
+    "Shift Handoff Documentation",
+    "Predictive Alerting Frameworks",
+    "RCA & Bug Reproduction",
+    "SOPs & Runbooks",
+    "Version Compatibility Planning",
+    "Post-Production Pipeline Support",
+    "Media Asset Management (MAM)",
+    "NLE Workflow Support",
+    "AV Commissioning",
+    "Link Budget & EIRP",
+    "Encoder / Decoder Validation",
   ],
 
   // =========================
@@ -57,7 +52,7 @@ export const profile = {
       "Avid MediaCentral",
       "DNxHD / DNxHR",
       "MXF / MOV / MPEG-TS",
-      "VSAT / Satellite",
+      "Frame-accurate Monitoring",
     ],
     cloud: [
       "AWS VPC / EC2",

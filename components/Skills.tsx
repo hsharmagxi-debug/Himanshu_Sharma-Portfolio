@@ -16,7 +16,6 @@ const skillCategories = [
       "Sencore / Telstra / Adtec",
       "Live Monitoring",
       "MPEG-TS",
-      "VSAT / Satellite",
     ],
   },
   {
@@ -60,6 +59,7 @@ const skillCategories = [
       "HPE/Aruba / Juniper",
       "Fiber / OTDR",
       "SAN / NAS",
+      "VSAT / Satellite",
       "Multicast / Unicast",
     ],
   },
